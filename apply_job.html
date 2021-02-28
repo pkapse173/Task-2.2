@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Apply For Job</title>
+        <link rel="stylesheet" href="applystyle.css">
+        <script src="apply_job.js">
+        </script>
+    </head>
+       <body>
+        <h1>Apply for Jobs</h1>
+            <div class="apply">
+            <form id="apply" method="get" action="">
+        
+                
+                <label><b>First Name<span class="required">*</span></b></label>
+                <input type="text"  name="fname" id="fname" placeholder="Enter your first name"><br><br>
+              
+                <label><b>Last Name<span class="required">*</span></b></label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name"><br><br>
+                
+                <label><b>Email<span class="required">*</span></b></label>
+                <input type="email" name="email" id="email" placeholder="Enter email"><br><br>
+                
+                <label><b>Phone Number<span class="required">*</span></b></label>
+                <input type="number" name="num" id="num" placeholder="10 digit number only"><br><br>
+                
+                <label><b>Address<span class="required">*</span></b></label>
+                <input type="text" name="add" id="add" placeholder="Enter address here"><br><br>
+                
+                <label><b>City</b></label>
+                <input type="text" name="city" id="city" placeholder="Enter city here"><br><br>
+                 
+                <label><b>State<span class="required">*</span></b></label>
+                <input type="text" name="state" id="state" placeholder="Enter state here"><br><br>
+                
+                <label><b>Zip<span class="required">*</span></b></label>
+                <input type="number" name="zip" id="zip" placeholder="Enter address here"><br><br>
+                 
+                <label for="Country"><b>Country:<span class="required">*</span></b></label>
+                <select name="ctr" id="ctr">
+                  <option value="0">None</option>
+                  <option value="ind">India</option>
+                  <option value="aus">Australia</option>
+                  <option value="chin">China</option>
+                  <option value="kor">Korea</option>
+                </select><br><br>
+
+                <label for="Edulvl"><b>Education Level:<span class="required">*</span></b></label>
+                <select name="edul" id="edul">
+                  <option value="0">None</option>
+                  <option value="1">10+2</option>
+                  <option value="2">Graduate</option>
+                  <option value="3">Post Graduate</option>
+                  <option value="4">Phd</option>
+                </select><br><br>
+
+                <label for="Edutyp"><b>Education Type:<span class="required">*</span></b></label>
+                <select name="edut" id="edut">
+                  <option value="0">None</option>
+                  <option value="1">Type A</option>
+                  <option value="2">Type B</option>
+                </select><br><br>
+
+                <p><b>Upload Resume<span class="required">*</span></b3></p><input type="file" id="myFile" name="filename"><br><br>
+
+                
+                
+                <label for="check">
+                  <input type="checkbox" id="check" onclick="ShowHideDiv(this)" />
+                  Are you Employed</label>
+              <hr />
+              <div id="Enumber" style="display: none">
+                  Employee Number<span class="required">*</span>
+                  <input type="text" id="EmpNumber" />
+              </div><br>
+              <div id="Yoe" style="display: none">
+                Year of Experience<span class="required">*</span>
+                <input type="text" id="Exp" />
+            </div><br>
+                
+                <label for="jobs"><b>Jobs you want to apply:<span class="required">*</span></b></label>
+                <select name="job" id="job" multiple>
+                    <option value="volvo">Developer</option>
+                    <option value="saab">Testing</option>
+                    <option value="opel">Finance</option>
+                    <option value="audi">Marketing</option>
+                </select> <br><br>
+             
+                <input type="submit" value="Reset" class="btn" />
+                <input type="submit" value="Apply" class="btn" onClick="apply()" /><br><br>
+                 </form>
+            </div>
+       </body>
+    </html>
